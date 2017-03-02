@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+@if (ViewBag.ErrorMessage == "AuthorizationRequired")
+{
+    <p>You have to sign-in to call webApi. Click @Html.ActionLink("here", "Contact", "Home", new { reauth = true }, null) to sign-in.</p>
+}
+else if (ViewBag.ErrorMessage == "UnexpectedError")
+{
+    <p>An unexpected error occurred while retrieving your profile.  Please try again.  You may need to sign-in.</p>
+}
+else
+{
+    <ul>
+        @MvcHtmlString.Create(ViewData["appRoles"].ToString().Replace(",\"Type", ",<br /><br /> \"TYPE"))
+    </ul>
+}
