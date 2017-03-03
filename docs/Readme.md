@@ -50,7 +50,8 @@ With this foundation laid out, my POC started weaning out based off Azure OpenID
          Owners: None
          Permissions:
            Windows Azure AD:
-             Delegated Permissions: Sign in and read user profile
+             Delegated Permissions: Sign in and read user profile  
+
      b. Configure the sample app to use your Azure AD tenant. Follow [step 3](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-openidconnect#step-3--configure-the-sample-to-use-your-azure-ad-tenant) of original article.
 
         <table border="1" style="width:300px">
