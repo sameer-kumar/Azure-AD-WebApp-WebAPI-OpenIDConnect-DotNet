@@ -54,12 +54,8 @@ With this foundation laid out, my POC started weaning out based off Azure OpenID
 
      b. Configure the sample app to use your Azure AD tenant. Follow [step 3](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-openidconnect#step-3--configure-the-sample-to-use-your-azure-ad-tenant) of original article.
 
-        | key  | value  | notes  |   |
-        |:-----|:-------|:-------|---|
-        ida:GraphResourceId  |https://graph.windows.net    |Azure GraphApi standard resource URL. |   |
-        
 
-<table border="1" style="width:300px">
+<table border="1">
     <thead>
         <tr>
             <th>Key</th>
