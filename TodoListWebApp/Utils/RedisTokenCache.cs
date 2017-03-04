@@ -16,6 +16,7 @@ using System.Web.Security;
 
 namespace TodoListWebApp.Utils
 {
+    // https://github.com/mrochon/RedisTokenCache/blob/master/RedisTokenCacheSample/Cache/RedisTokenCache.cs
     public class RedisTokenCache : TokenCache
     {
         private string UserId;
