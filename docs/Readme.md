@@ -128,9 +128,7 @@ With this foundation laid out, my POC started weaning out based off Azure OpenID
        ```
        c:/"Program Files (x86)/Windows Kits/8.1/bin/x64"/makecert -r -pe -n "CN=mytokentestCert" -ss My -len 2048 mytokentestCert.cer
        ```
-       Export the .cer to .pfx either from UI or cmd line.
-
-       More details are available [here](https://msdn.microsoft.com/library/ff699202.aspx).
+       Export the .cer to .pfx either from UI or cmd line. More details are available [here](https://msdn.microsoft.com/library/ff699202.aspx).
 
        You also need to add the cert to your Azure web site via Azure portal or Azure KeyVault.
        Adding a Certificate to your Web App is a simple two-step process. First, go to the Azure Portal and navigate to your Web App. On the Settings blade for your Web App, click on the entry for "SSL certificates". On the blade that opens you will be able to upload the Certificate that you created above, mytokentestCert.pfx, make sure that you remember the password for the pfx.
