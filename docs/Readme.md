@@ -1,6 +1,6 @@
 # Azure-AD-WebApp-WebAPI-OpenIDConnect-DotNet
 With our journey to Azure, I was given a responsibility to develop a POC to vet out a viable security model to be used with Azure PaaS web apps.  
-I had lots of stumbling blocks while developing this POC which targeted our internal LOB web applications. It had lots of moving parts and took me few weeks to figure out a right way of doing things. That's when the idea for this post cropped up with the assumption of helping others in saving their time and energy. So without much dilly-dally let's continue.
+I had few stumbling blocks while developing this POC which targeted our internal LOB web applications. It had lots of moving parts and took me few weeks to figure out a right way of doing things. That's when the idea for this post cropped up with the assumption of helping others in saving their time and energy. So without much dilly-dally let's continue.
 
 There were few facts known to me before I started this POC like:
  1. All our current internal LOB web apps are secured using Windows Authentication.
