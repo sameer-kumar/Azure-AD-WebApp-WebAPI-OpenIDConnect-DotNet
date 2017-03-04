@@ -52,7 +52,7 @@ With this foundation laid out, my POC started weaning out based off Azure OpenID
            Windows Azure AD:
              Delegated Permissions: Sign in and read user profile  
 
-     b. Configure the sample app to use your Azure AD tenant. Follow [step 3](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-openidconnect#step-3--configure-the-sample-to-use-your-azure-ad-tenant) of original article.
+     b. Configure the sample app to use your Azure AD tenant. Follow [step 3](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-openidconnect#step-3--configure-the-sample-to-use-your-azure-ad-tenant) of original article.  
      App settings for sample are described [here](appsettings.html).
 
      c. The sample code didn't work out of box for me. I need to downgrade ADAL the version 3.9.304210845 from 3.13.8 to fix the issues. Once done, the flow was straight forward. It uses Owin Middleware Component for OpenID connect. The "Sign in" link takes the user to login.microsoftonline.com screen where they enter their domain login id, Ping validates the user, AAD trusts Ping hence issues authentication token which is stored as a cookie in the browser.
